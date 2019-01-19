@@ -10,16 +10,17 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
-
+import MenuIcon from '@material-ui/icons/Menu'
 
 const styles = {
     list: {
         width: 250,
     },
-    fullList: {
-        width: 'auto',
-    },
+    listItem: {
+        color: 'inherit',
+        paddingLeft: '25px',
+        textDecoration: 'none'
+    }
 };
 
 class TemporaryDrawer extends React.Component {
@@ -39,47 +40,18 @@ class TemporaryDrawer extends React.Component {
         const sideList = (
             <div className={classes.list}>
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
-                <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                    <ListItem>
+                        <a href="#" className={classes.listItem}>Обо мне</a>
+                    </ListItem>
+                    <ListItem>
+                        <a href="#" className={classes.listItem}>Работы</a>
+                    </ListItem>
+                    <ListItem>
+                        <a href="#" className={classes.listItem}>Контакты</a>
+                    </ListItem>
                 </List>
             </div>
         );
-
-        const fullList = (
-            <div className={classes.fullList}>
-                <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
-                <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
-            </div>
-        );
-
         return (
             <div>
 
