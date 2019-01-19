@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
+import Education from './education'
 
 const styles = theme => ({
     root: {
@@ -35,7 +36,8 @@ function paperAboutItem(props) {
                             ES6<br />
                             React / Redux / Saga<br />
                             JSS<br />
-                            Styled Components
+                            Styled Components<br />
+                            jQuery
                         </Typography>
                     </List>
                     <List>
@@ -43,6 +45,7 @@ function paperAboutItem(props) {
                             CSS
                          </Typography>
                         <Typography variant="p" component="p">
+                            HTML5<br />
                             CSS3<br />
                             SASS<br />
                             Post-CSS<br />
@@ -55,13 +58,16 @@ function paperAboutItem(props) {
                          </Typography>
                         <Typography variant="p" component="p">
                             Github<br />
-                            Gitlab<br />
                             Confluence<br />
+                            Chat ;)
                         </Typography>
                     </List>
                 </div>
+                <Education />
+
             </Paper>
         </div>
+
     );
 }
 

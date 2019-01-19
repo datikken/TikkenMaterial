@@ -44,9 +44,6 @@ class TemporaryDrawer extends React.Component {
                     <ListItem>
                         <a href="#" className={classes.listItem}>Работы</a>
                     </ListItem>
-                    <ListItem>
-                        <a href="#" className={classes.listItem}>Контакты</a>
-                    </ListItem>
                 </List>
             </div>
         );
