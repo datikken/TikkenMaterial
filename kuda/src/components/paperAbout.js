@@ -7,6 +7,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import PaperAboutItem from './paperAboutItem'
 import Card from './card'
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 const styles = theme => ({
     paperWrapper: {
@@ -19,6 +20,10 @@ const styles = theme => ({
     },
     aboutWrapper: {
         display: 'flex',
+        justifyContent: 'space-around',
+        margin: 10
+    },
+    socialIcons: {
         justifyContent: 'space-around'
     }
 });
@@ -32,7 +37,7 @@ function PaperSheet(props) {
                     <div className="listWrapper">
                         <Typography variant="h5" component="h5">
                             Обо мне:
-                       </Typography>
+                        </Typography>
                         <List>
                             <ListItem>
                                 Frontend developer
@@ -40,6 +45,14 @@ function PaperSheet(props) {
                             <ListItem>
                                 Никита Шадыбеков, 26 лет
                             </ListItem>
+                            <ListItem>
+                                г. Санкт-Петербург
+                            </ListItem>
+                            <ListItem className={classes.socialIcons}>
+                                <i class="fab fa-facebook fa-2x"></i>
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </ListItem>
+
                         </List>
                     </div>
                     <Card />

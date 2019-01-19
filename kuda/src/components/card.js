@@ -8,14 +8,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import imgLarge from '../images/3.png';
-import imgMedium from '../images/2.png';
+
 import imgSmall from '../images/1.png';
 
 const styles = {
     card: {
-        maxWidth: 400,
-    },
+        maxHeight: 300,
+        maxWidth: 250
+    }
 };
 
 function ImgMediaCard(props) {
@@ -23,8 +23,7 @@ function ImgMediaCard(props) {
     return (
         <Card className={classes.card}>
             <CardActionArea>
-
-                <img src={imgSmall} srcSet={`${imgSmall} 300w, ${imgMedium} 768w, ${imgLarge} 1280w`} />
+                <img src={imgSmall} />
             </CardActionArea>
         </Card>
     );
