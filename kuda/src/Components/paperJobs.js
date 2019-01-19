@@ -21,7 +21,6 @@ function PaperSheet(props) {
                 <Typography variant="h5" component="h3">
                     Опыт работы:
                 </Typography>
-
             </Paper>
         </div>
     );

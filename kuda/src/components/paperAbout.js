@@ -49,12 +49,9 @@ function PaperSheet(props) {
                                 г. Санкт-Петербург
                             </ListItem>
                             <ListItem className={classes.socialIcons}>
-
                                 <i class="fab fa-facebook fa-2x"></i>
                                 <i class="fab fa-instagram fa-2x"></i>
-
                             </ListItem>
-
                         </List>
                     </div>
                     <Card />

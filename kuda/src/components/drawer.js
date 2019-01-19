@@ -9,6 +9,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu'
+import About from '../Pages/about.js'
+import { Link } from 'react-router-dom'
 
 const styles = {
     list: {
@@ -39,17 +41,18 @@ class TemporaryDrawer extends React.Component {
             <div className={classes.list}>
                 <List>
                     <ListItem>
-                        <a href="#" className={classes.listItem}>Обо мне</a>
+                        <div>
+                            <Link to="/About" className={classes.listItem}>Обо мне</Link>
+                        </div>
                     </ListItem>
                     <ListItem>
-                        <a href="#" className={classes.listItem}>Работы</a>
+                        <Link to="/Jobs" className={classes.listItem}>Работы</Link>
                     </ListItem>
                 </List>
             </div>
         );
         return (
             <div>
-
                 <Button onClick={this.toggleDrawer('left', true)}><MenuIcon /></Button>
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
                     <div
