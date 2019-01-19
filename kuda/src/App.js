@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import ButtonAppBar from './components/navbar';
-import TemporaryDrawer from './components/drawer';
+import About from './Pages/about'
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <ButtonAppBar />
+        <About />
       </div>
     )
   }
