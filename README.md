@@ -1,4 +1,4 @@
 # TikkenMaterial
-# cd project
-# npm install
-# npm start
+cd project<br/>
+npm install<br/>
+npm start
