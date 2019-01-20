@@ -25,14 +25,16 @@ function SimpleExpansionPanel(props) {
         <div className={classes.root}>
             <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>Образование:</Typography>
+                    <Typography className={classes.heading}>Ultimate Guitar</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <Typography>
-                        “Дизайнер мультимедийных систем и  компьютерной графики”<br />
-                        Среднее специальное, техническое. ПККТ им Х.З им Каланова.<br />
-                        Узбекистан г. Ташкент. Сентябрь 2008 / Май 2011
-          </Typography>
+                    <Typography className={classes.heading}>
+                        Content manager:
+
+                            Выполнение ритуалов компании, проведение экспериментов.
+                                  Доставка каждый день.
+
+                    </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
         </div>

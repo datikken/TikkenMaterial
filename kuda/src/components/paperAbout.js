@@ -8,6 +8,7 @@ import ListItem from '@material-ui/core/ListItem';
 import PaperAboutItem from './paperAboutItem'
 import Card from './card'
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import Link from 'react-dom'
 
 const styles = theme => ({
     paperWrapper: {
@@ -24,7 +25,7 @@ const styles = theme => ({
         margin: 10
     },
     socialIcons: {
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
     }
 });
 
@@ -49,8 +50,8 @@ function PaperSheet(props) {
                                 г. Санкт-Петербург
                             </ListItem>
                             <ListItem className={classes.socialIcons}>
-                                <i class="fab fa-facebook fa-2x"></i>
-                                <i class="fab fa-instagram fa-2x"></i>
+                                <a href="https://www.facebook.com/tikken.tikken.3" target='blank'><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://vk.com/datikken" target='blank'><i class="fab fa-vk fa-2x"></i></a>
                             </ListItem>
                         </List>
                     </div>

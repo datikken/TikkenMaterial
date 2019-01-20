@@ -12,6 +12,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import About from '../Pages/about.js'
 import { Link } from 'react-router-dom'
 
+
 const styles = {
     list: {
         width: 250,
@@ -20,6 +21,13 @@ const styles = {
         color: 'inherit',
         paddingLeft: '25px',
         textDecoration: 'none'
+    },
+    listHeader: {
+        display: 'flex',
+        alignItems: 'center',
+        margin: 'auto',
+        textDecoration: 'none',
+        color: 'black'
     }
 };
 
@@ -42,11 +50,25 @@ class TemporaryDrawer extends React.Component {
                 <List>
                     <ListItem>
                         <div>
+                            <Link to="/About" className={classes.listHeader}>Tikken</Link>
+                        </div>
+                    </ListItem>
+                    <Divider light />
+                    <ListItem>
+                        <div>
                             <Link to="/About" className={classes.listItem}>Обо мне</Link>
                         </div>
                     </ListItem>
                     <ListItem>
-                        <Link to="/Jobs" className={classes.listItem}>Работы</Link>
+                        <div>
+                            <Link to="/Projects" className={classes.listItem}>Проекты</Link>
+                        </div>
+                    </ListItem>
+                    <ListItem>
+                        <Link to="/Jobs" className={classes.listItem}>Опыт работы</Link>
+                    </ListItem>
+                    <ListItem>
+                        <a href="https://docs.google.com/document/d/16u6f9S8C-E6Ysl2i1H94Ir5VecAksFzCsPXqEyMNSt0/edit#" target="blank" className={classes.listItem}>CV.doc</a>
                     </ListItem>
                 </List>
             </div>

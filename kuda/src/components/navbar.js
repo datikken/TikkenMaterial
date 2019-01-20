@@ -8,12 +8,15 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import TemporaryDrawer from './drawer';
 
+
 const styles = {
     root: {
         flexGrow: 1,
+        paddingTop: 55
     },
     grow: {
         flexGrow: 1,
+        paddingLeft: 10
     },
     menuButton: {
         marginLeft: -12,
@@ -25,12 +28,13 @@ function ButtonAppBar(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="fixed" color="white">
                 <Toolbar>
                     <TemporaryDrawer />
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         Tikken
                     </Typography>
+
                 </Toolbar>
             </AppBar>
         </div>

@@ -23,7 +23,9 @@ function ImgMediaCard(props) {
     return (
         <Card className={classes.card}>
             <CardActionArea>
-                <img src={imgSmall} />
+                <a target="blank" href="https://www.instagram.com/tikkentikken/">
+                    <img src={imgSmall} />
+                </a>
             </CardActionArea>
         </Card>
     );
