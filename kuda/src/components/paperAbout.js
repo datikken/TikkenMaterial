@@ -27,6 +27,12 @@ const styles = theme => ({
     },
     socialIcons: {
         justifyContent: 'space-around',
+        textDecoration: 'none',
+        paddingRight: 55
+    },
+    tel: {
+        textDecoration: 'none',
+        color: 'black'
     }
 });
 
@@ -36,7 +42,7 @@ function PaperSheet(props) {
         <div className={classes.paperWrapper}>
             <Paper className={classes.root} elevation={1}>
                 <div className={classes.aboutWrapper}>
-                    <div className="listWrapper">
+                    <div>
                         <Typography variant="h5" component="h5">
                             Обо мне:
                         </Typography>
@@ -50,10 +56,19 @@ function PaperSheet(props) {
                             <ListItem>
                                 г. Санкт-Петербург
                             </ListItem>
+                            <ListItem>
+                                <a className={classes.tel} href="tel:+89005679748"> 8 (900) 567-97-48</a>
+                            </ListItem>
                             <ListItem className={classes.socialIcons}>
                                 <a href="https://www.facebook.com/tikken.tikken.3" target='blank'><i class="fab fa-facebook fa-2x"></i></a>
                                 <a href="https://vk.com/datikken" target='blank'><i class="fab fa-vk fa-2x"></i></a>
                             </ListItem>
+
+                            <ListItem className={classes.socialIcons}>
+                                <a href="https://github.com/tikken" target='blank'><i class="fab fa-github fa-2x"></i></a>
+                                <a href='tg://resolve?domain=tikken23'><i class="fab fa-telegram fa-2x"></i></a>
+                            </ListItem>
+
                         </List>
                     </div>
                     <Card />

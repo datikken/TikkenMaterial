@@ -13,7 +13,6 @@ const styles = theme => ({
         maxWidth: '50%',
         paddingTop: '10px',
         fontFamily: 'Roboto'
-
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),

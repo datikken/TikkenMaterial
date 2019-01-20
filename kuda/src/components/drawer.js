@@ -9,9 +9,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu'
-import About from '../Pages/about.js'
+import About from '../Pages/about'
 import { Link } from 'react-router-dom'
-
 
 const styles = {
     list: {
@@ -42,6 +41,7 @@ class TemporaryDrawer extends React.Component {
             [side]: open,
         });
     };
+
 
     render() {
         const { classes } = this.props;
