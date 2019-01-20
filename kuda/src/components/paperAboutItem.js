@@ -11,6 +11,7 @@ const styles = theme => ({
         ...theme.mixins.gutters(),
         paddingTop: theme.spacing.unit * 2,
         paddingBottom: theme.spacing.unit * 2,
+        fontFamily: 'Roboto'
     },
     lists: {
         display: 'flex',
@@ -57,6 +58,7 @@ function paperAboutItem(props) {
                             Tools
                          </Typography>
                         <Typography variant="p" component="p">
+                            English: B2<br />
                             Github<br />
                             Confluence<br />
                             Chat ;)

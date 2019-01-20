@@ -18,6 +18,7 @@ const styles = theme => ({
         ...theme.mixins.gutters(),
         paddingTop: theme.spacing.unit * 2,
         paddingBottom: theme.spacing.unit * 2,
+        fontFamily: 'Roboto'
     },
     aboutWrapper: {
         display: 'flex',

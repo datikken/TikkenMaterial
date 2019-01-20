@@ -16,11 +16,12 @@ import { Link } from 'react-router-dom'
 const styles = {
     list: {
         width: 250,
+        fontFamily: 'Roboto'
     },
     listItem: {
         color: 'inherit',
         paddingLeft: '25px',
-        textDecoration: 'none'
+        textDecoration: 'none',
     },
     listHeader: {
         display: 'flex',
@@ -63,9 +64,6 @@ class TemporaryDrawer extends React.Component {
                         <div>
                             <Link to="/Projects" className={classes.listItem}>Проекты</Link>
                         </div>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/Jobs" className={classes.listItem}>Опыт работы</Link>
                     </ListItem>
                     <ListItem>
                         <a href="https://docs.google.com/document/d/16u6f9S8C-E6Ysl2i1H94Ir5VecAksFzCsPXqEyMNSt0/edit#" target="blank" className={classes.listItem}>CV.doc</a>

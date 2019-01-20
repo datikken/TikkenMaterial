@@ -11,7 +11,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const styles = theme => ({
     root: {
         maxWidth: '50%',
-        paddingTop: '10px'
+        paddingTop: '10px',
+        fontFamily: 'Roboto'
+
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
