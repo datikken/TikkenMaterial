@@ -10,10 +10,14 @@ import Card from './card'
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import Link from 'react-dom'
 import ProjectCard from './projectCard'
+import ProjectCard2 from './projectCard2'
 
 const styles = theme => ({
     paperWrapper: {
         paddingTop: 15,
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexWrap: 'wrap'
     },
     root: {
         ...theme.mixins.gutters(),
@@ -25,22 +29,37 @@ const styles = theme => ({
         display: 'flex',
         justifyContent: 'space-around',
         margin: 10
+
     },
     socialIcons: {
         justifyContent: 'space-around',
+    },
+    cardItem2: {
+        paddingTop: 50
     }
+
 });
 
 function ProjectSurface(props) {
     const { classes } = props;
     return (
-        <div className={classes.paperWrapper}>
-            <Paper className={classes.root} elevation={1}>
+        <Paper className={classes.root} elevation={1}>
+            <div className={classes.paperWrapper}>
 
-                <ProjectCard />
+                <div className={classes.cardItem}>
+                    <ProjectCard />
 
-            </Paper>
-        </div>
+                </div>
+
+                <div className={classes.cardItem2}>
+                    <ProjectCard2 />
+
+                </div>
+            </div>
+
+        </Paper>
+
+
     );
 }
 
