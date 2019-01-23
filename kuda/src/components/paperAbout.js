@@ -60,13 +60,13 @@ function PaperSheet(props) {
                                 <a className={classes.tel} href="tel:+89005679748"> 8 (900) 567-97-48</a>
                             </ListItem>
                             <ListItem className={classes.socialIcons}>
-                                <a href="https://www.facebook.com/tikken.tikken.3" target='blank'><i class="fab fa-facebook fa-2x"></i></a>
-                                <a href="https://vk.com/datikken" target='blank'><i class="fab fa-vk fa-2x"></i></a>
+                                <a href="https://www.facebook.com/tikken.tikken.3" target='blank'><i className="fab fa-facebook fa-2x"></i></a>
+                                <a href="https://vk.com/datikken" target='blank'><i className="fab fa-vk fa-2x"></i></a>
                             </ListItem>
 
                             <ListItem className={classes.socialIcons}>
-                                <a href="https://github.com/tikken" target='blank'><i class="fab fa-github fa-2x"></i></a>
-                                <a href='tg://resolve?domain=tikken23'><i class="fab fa-telegram fa-2x"></i></a>
+                                <a href="https://github.com/tikken" target='blank'><i className="fab fa-github fa-2x"></i></a>
+                                <a href='tg://resolve?domain=tikken23'><i className="fab fa-telegram fa-2x"></i></a>
                             </ListItem>
 
                         </List>

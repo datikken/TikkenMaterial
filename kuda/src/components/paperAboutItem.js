@@ -15,7 +15,7 @@ const styles = theme => ({
     },
     lists: {
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-around'
     }
 });
 
@@ -33,36 +33,36 @@ function paperAboutItem(props) {
                         <Typography variant="h6" component="h6">
                             JavaScript
                          </Typography>
-                        <Typography variant="p" component="p">
+                        <p>
                             ES6<br />
                             React / Redux / Saga<br />
                             JSS<br />
                             Styled Components<br />
                             jQuery
-                        </Typography>
+                        </p>
                     </List>
                     <List>
                         <Typography variant="h6" component="h6">
                             CSS
                          </Typography>
-                        <Typography variant="p" component="p">
+                        <p>
                             HTML5<br />
                             CSS3<br />
                             SASS<br />
                             Post-CSS<br />
                             Modules
-                        </Typography>
+                          </p>
                     </List>
                     <List>
                         <Typography variant="h6" component="h6">
                             Tools
                          </Typography>
-                        <Typography variant="p" component="p">
+                        <p>
                             English: B2<br />
                             Github<br />
                             Confluence<br />
                             Chat ;)
-                        </Typography>
+                          </p>
                     </List>
                 </div>
                 <Education />
