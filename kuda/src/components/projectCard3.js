@@ -22,7 +22,9 @@ const styles = {
         textDecoration: 'none'
     },
     cardP: {
-        margin: 25
+        margin: 25,
+        marginTop: 25
+
     }
 };
 

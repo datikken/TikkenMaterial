@@ -66,7 +66,10 @@ class TemporaryDrawer extends React.Component {
                         </div>
                     </ListItem>
                     <ListItem>
-                        <a href="https://docs.google.com/document/d/16u6f9S8C-E6Ysl2i1H94Ir5VecAksFzCsPXqEyMNSt0/edit#" target="blank" className={classes.listItem}>CV.doc</a>
+                        <a href="https://docs.google.com/document/d/16u6f9S8C-E6Ysl2i1H94Ir5VecAksFzCsPXqEyMNSt0/edit#" target="blank" className={classes.listItem}>Рус - CV.doc</a>
+                    </ListItem>
+                    <ListItem>
+                        <a href="https://docs.google.com/document/d/1K0O0q15CLhu7meH1szsOZ8GPcn0LhGk4q4T3CxVQWAo/edit" target="blank" className={classes.listItem}>Eng - CV.doc</a>
                     </ListItem>
                 </List>
             </div>

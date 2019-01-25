@@ -13,28 +13,17 @@ import ProjectCard from './projectCard'
 import ProjectCard2 from './projectCard2'
 import ProjectCard3 from './projectCard3'
 
-const styles = theme => ({
+const styles = ({
     paperWrapper: {
         paddingTop: 15,
         display: 'flex',
         justifyContent: 'space-around',
-        flexWrap: 'nowrap'
+        flexWrap: 'wrap'
     },
     root: {
-        ...theme.mixins.gutters(),
-        paddingTop: theme.spacing.unit * 2,
-        paddingBottom: theme.spacing.unit * 2,
-        fontFamily: 'Roboto'
+        fontFamily: 'Roboto',
+        paddingBottom: 25
     },
-    aboutWrapper: {
-        display: 'flex',
-        justifyContent: 'space-around',
-        margin: 10
-
-    },
-    socialIcons: {
-        justifyContent: 'space-around',
-    }
 });
 
 function ProjectSurface(props) {
