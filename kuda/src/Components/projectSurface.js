@@ -11,13 +11,14 @@ import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import Link from 'react-dom'
 import ProjectCard from './projectCard'
 import ProjectCard2 from './projectCard2'
+import ProjectCard3 from './projectCard3'
 
 const styles = theme => ({
     paperWrapper: {
         paddingTop: 15,
         display: 'flex',
         justifyContent: 'space-around',
-        flexWrap: 'wrap'
+        flexWrap: 'nowrap'
     },
     root: {
         ...theme.mixins.gutters(),
@@ -33,11 +34,7 @@ const styles = theme => ({
     },
     socialIcons: {
         justifyContent: 'space-around',
-    },
-    cardItem2: {
-        paddingTop: 50
     }
-
 });
 
 function ProjectSurface(props) {
@@ -50,11 +47,15 @@ function ProjectSurface(props) {
                     <ProjectCard />
 
                 </div>
-
                 <div className={classes.cardItem2}>
+                    <ProjectCard3 />
+
+                </div>
+                <div className={classes.cardItem3}>
                     <ProjectCard2 />
 
                 </div>
+
             </div>
 
         </Paper>

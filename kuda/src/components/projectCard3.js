@@ -8,7 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import imgSmall from '../images/2.png';
+
+import imgSmall2 from '../images/3.png';
 
 const styles = {
     card: {
@@ -21,7 +22,7 @@ const styles = {
         textDecoration: 'none'
     },
     cardP: {
-        marginLeft: 25
+        margin: 25
     }
 };
 
@@ -33,12 +34,11 @@ function ProjectCard(props) {
                 className={classes.cardHeading}>
                 Landing page:
                     </Typography>
-            <p className={classes.cardP}>Parallax effect</p>
-
+            <p className={classes.cardP}>Materialize CSS</p>
             <CardActionArea>
-                <a target="blank" href="http://redroom39.ru/">
+                <a target="blank" href="http://deonis39.ru/">
 
-                    <img src={imgSmall} />
+                    <img src={imgSmall2} />
                 </a>
             </CardActionArea>
         </Card>
